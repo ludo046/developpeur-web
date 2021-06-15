@@ -1,0 +1,177 @@
+::ng-deep * {
+    margin: 0;
+    padding: 0;
+}
+$backgroundColor: rgb(231, 227, 227);
+$primaryColor: #00a1ff;
+
+.top{
+    text-align: center;
+    background: linear-gradient(217deg, rgb(51, 85, 105), rgba(255, 0, 0, 0) 70.71%),
+                linear-gradient(127deg, rgba(55, 85, 119, 0.8), rgba(0,255,0,0) 70.71%),
+                linear-gradient(336deg, rgba(71, 96, 124, 0.8), rgba(0,0,255,0) 70.71%);
+    color: white;
+    padding: 100px 0;
+    h1{
+        font-family: "montserrat";
+    }
+    h2{
+        font-family: "montserrat-regular";
+        .bold{
+            font-family: "montserrat";
+        }
+    }
+    button{
+        color: white;
+        background-color: $primaryColor;
+        border-radius: 10px;
+        height: 40px;
+        width: 130px;
+        margin: 20px 0;
+        font-family: "montserrat";
+        border: none;
+        box-shadow: inset -8px -8px 10px -8px #000000;
+    }
+}
+.me{
+    background-color: rgb(29, 29, 29);
+    color: white;
+    position: relative;
+    h2{
+        padding: 80px 0;
+        font-family: "montserrat";
+        text-align: center;
+    }
+    img{
+        height: 300px;
+        width: 300px;
+        border-radius: 50%;
+        object-fit: cover;
+        display: flex;
+        margin: 0 auto;
+    }
+    p{
+        padding: 50px 20px;
+        text-align: center;
+        font-family: "montserrat-regular";
+    }
+    .deco{
+        display : inline-block;
+        height : 0;
+        width : 0;
+        border-top : 20px solid transparent;
+        border-left : 375px solid rgb(73, 73, 73);
+        transform: rotateY(178deg);
+        transform: rotate(1deg);
+        background-color: rgb(29, 29, 29);
+        position: absolute;
+        bottom: -6px;
+    }
+    
+}
+.services{
+    background-color: rgb(43, 43, 43);
+    text-align: center;
+    color: white;
+    padding: 30px 20px;
+    position: relative;
+    h2{
+        font-family: "montserrat";
+        padding-bottom: 30px;
+        margin-bottom: 30px;
+    }
+    .container{
+        margin-bottom: 80px;
+        fa-icon{
+            font-size: 60px;
+            border: 2px solid white;
+            padding: 20px 25px;
+            border-radius: 50%;
+        }
+        h3{
+            font-family: "montserrat";
+            margin: 30px 0;
+        }
+        p{
+            font-family: "montserrat-regular";
+        }
+    }
+    .deco-service{
+        display : inline-block;
+        height : 0;
+        width : 0;
+        border-top : 50px solid rgb(43, 43, 43);
+        border-right : 187px solid transparent;
+        border-left : 186px solid transparent;
+        position: absolute;
+        transform: rotate(0deg);
+        left: 0;
+        bottom: -49px;
+    }
+}
+.contact{
+    text-align: center;
+    background: linear-gradient(217deg, rgb(51, 85, 105), rgba(255, 0, 0, 0) 70.71%),
+                linear-gradient(127deg, rgba(55, 85, 119, 0.8), rgba(0,255,0,0) 70.71%),
+                linear-gradient(336deg, rgba(71, 96, 124, 0.8), rgba(0,0,255,0) 70.71%);
+    color: white;
+    padding: 100px 0 50px 0;
+    font-family: "montserrat";
+    h2{
+        margin-bottom: 30px;
+    }
+    p{
+        padding: 0 20px;
+        font-family: "montserrat-regular";
+    }
+    form{
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        margin: 0 auto;
+        padding-top: 50px;
+        input{
+            background-color: transparent;
+            border: 2px solid white;
+            height: 50px;
+            margin-bottom: 50px;
+            font-size: 20px;
+            padding: 10px;
+            color: white;
+            font-family: "montserrat";
+            &::placeholder{
+                font-size: 20px;
+                padding: 10px;
+                color: white;
+                font-family: "montserrat";
+            }
+        }
+        textarea{
+            height: 150px;
+            background-color: transparent;
+            border: 2px solid white;
+            font-size: 20px;
+            padding: 10px;
+            color: white;
+            font-family: "montserrat";
+            &::placeholder{
+                font-size: 20px;
+                padding: 10px;
+                color: white;
+                font-family: "montserrat";
+            }
+        }
+        .submit{
+            width: 150px;
+            height: 60px;
+            font-family: "montserrat";
+            font-size: 20px;
+            background-color: $primaryColor;
+            border: none;
+            box-shadow: inset -8px -8px 10px -8px #000000;
+            border-radius: 20px;
+            margin: 20px 0 0 55%;
+            color: white;
+        }
+    }
+}
