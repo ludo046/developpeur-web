@@ -1,0 +1,150 @@
+::ng-deep * {
+  margin: 0;
+  padding: 0;
+}
+
+.top {
+  text-align: center;
+  color: #1d1d1d;
+  padding: 100px 0px 150px;
+  font-family: "montserrat";
+  position: relative;
+  -webkit-clip-path: polygon(0 17%, 100% 0, 100% 100%, 0% 100%);
+          clip-path: polygon(0 17%, 100% 0, 100% 100%, 0% 100%);
+}
+
+.top .topBottom {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  bottom: -150px;
+  left: 0;
+  margin: 0 auto;
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.top .topBottom .triangleLeft {
+  display: inline-block;
+  height: 0;
+  width: 50%;
+  border-right: 150px solid transparent;
+  border-bottom: 80px solid #1d1d1d;
+}
+
+.top .topBottom .triangleRight {
+  display: inline-block;
+  height: 0;
+  width: 50%;
+  border-bottom: 80px solid #1d1d1d;
+  border-left: 150px solid transparent;
+}
+
+.competence {
+  background-color: #1d1d1d;
+}
+
+.competence .container {
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.competence .container img {
+  width: 80px;
+  margin-right: 20px;
+}
+
+.competence .container .pointVide {
+  height: 30px;
+  background-color: white;
+  border-radius: 20px;
+  width: 20px;
+  margin: auto 0;
+  margin-right: 20px;
+}
+
+.competence .container .pointPlein {
+  height: 30px;
+  background-color: white;
+  border-radius: 20px;
+  width: 20px;
+  margin: auto 0;
+  margin-right: 20px;
+}
+
+.point1 {
+  -webkit-animation: pointcolor .1s linear .2s 1 forwards;
+          animation: pointcolor .1s linear .2s 1 forwards;
+}
+
+.point2 {
+  -webkit-animation: pointcolor .1s linear .4s 1 forwards;
+          animation: pointcolor .1s linear .4s 1 forwards;
+}
+
+.point3 {
+  -webkit-animation: pointcolor .1s linear .6s 1 forwards;
+          animation: pointcolor .1s linear .6s 1 forwards;
+}
+
+.point4 {
+  -webkit-animation: pointcolor .1s linear .8s 1 forwards;
+          animation: pointcolor .1s linear .8s 1 forwards;
+}
+
+.point5 {
+  -webkit-animation: pointcolor .1s linear 1s 1 forwards;
+          animation: pointcolor .1s linear 1s 1 forwards;
+}
+
+.point6 {
+  -webkit-animation: pointcolor .1s linear 1.2s 1 forwards;
+          animation: pointcolor .1s linear 1.2s 1 forwards;
+}
+
+.point7 {
+  -webkit-animation: pointcolor .1s linear 1.4s 1 forwards;
+          animation: pointcolor .1s linear 1.4s 1 forwards;
+}
+
+.point8 {
+  -webkit-animation: pointcolor .1s linear 1.6s 1 forwards;
+          animation: pointcolor .1s linear 1.6s 1 forwards;
+}
+
+.point9 {
+  -webkit-animation: pointcolor .1s linear 1.8s 1 forwards;
+          animation: pointcolor .1s linear 1.8s 1 forwards;
+}
+
+.point10 {
+  -webkit-animation: pointcolor .1s linear 2s 1 forwards;
+          animation: pointcolor .1s linear 2s 1 forwards;
+}
+
+@-webkit-keyframes pointcolor {
+  from {
+    background-color: white;
+  }
+  to {
+    background-color: yellowgreen;
+  }
+}
+
+@keyframes pointcolor {
+  from {
+    background-color: white;
+  }
+  to {
+    background-color: yellowgreen;
+  }
+}
+/*# sourceMappingURL=competences.component.css.map */

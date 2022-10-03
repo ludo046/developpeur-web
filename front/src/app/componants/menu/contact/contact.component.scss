@@ -1,0 +1,114 @@
+::ng-deep * {
+    margin: 0;
+    padding: 0;
+    //color: white;
+    font-family: "montserrat";
+}
+
+$primaryColor: #497691;
+
+.top{
+    text-align: center;
+    color: rgb(29, 29, 29);
+    padding: 100px 0px 150px;
+    font-family: "montserrat";
+    position: relative;
+    p{
+        padding: 10px 20px 0;
+        line-height: 1.8;
+    }
+    .topBottom{
+        position: relative;
+        display: flex;
+        bottom: -151px;
+        left: 0;
+        margin: 0 auto;
+        width: 100%;
+        justify-content: center;
+        .triangleLeft{
+            display : inline-block;
+            height : 0;
+            width : 50%;
+            border-right : 150px solid transparent;
+            border-bottom : 80px solid rgb(29, 29, 29);
+        }
+        .triangleRight{
+            display : inline-block;
+            height : 0;
+            width : 50%;
+            border-bottom : 80px solid rgb(29, 29, 29);
+            border-left : 150px solid transparent;
+        }
+    }
+}
+.contact{
+    text-align: center;
+    background: rgb(29, 29, 29);
+    color: white;
+    padding: 100px 0 50px 0;
+    font-family: "montserrat";
+    h2{
+        margin-bottom: 30px;
+    }
+    p{
+        padding: 0 20px;
+        font-family: "montserrat-regular";
+    }
+    form{
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        margin: 0 auto;
+        padding-top: 50px;
+        input{
+            background-color: transparent;
+            border-image-source: linear-gradient(to right top, #916027, #a77c3c, #bd9a53, #d2b86d, #e6d788);
+            border-width: 2pt;
+            border-image-slice: 1;
+            height: 50px;
+            margin-bottom: 50px;
+            font-size: 20px;
+            padding: 10px;
+            color: white;
+            font-family: "montserrat";
+            &::placeholder{
+                font-size: 20px;
+                padding: 10px;
+                color: white;
+                font-family: "montserrat";
+            }
+        }
+        textarea{
+            height: 150px;
+            background-color: transparent;
+            border-image-source: linear-gradient(to right top, #916027, #a77c3c, #bd9a53, #d2b86d, #e6d788);
+            border-width: 2pt;
+            border-image-slice: 1;
+            font-size: 20px;
+            padding: 10px;
+            color: white;
+            font-family: "montserrat";
+            &::placeholder{
+                font-size: 20px;
+                padding: 10px;
+                color: white;
+                font-family: "montserrat";
+            }
+        }
+        .submit{
+            width: 150px;
+            height: 60px;
+            font-family: "montserrat";
+            font-size: 20px;
+            background: transparent;
+            border-image-source: linear-gradient(to right top, #916027, #a77c3c, #bd9a53, #d2b86d, #e6d788);
+            border-width: 2pt;
+            border-image-slice: 1;
+            box-shadow: -8px -8px 10px -8px #000000;
+            border-radius: 20px;
+            margin: 20px auto ;
+            color: white;
+        }
+        
+    }
+}

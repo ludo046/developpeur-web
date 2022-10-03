@@ -1,0 +1,176 @@
+::ng-deep * {
+  margin: 0;
+  padding: 0;
+  font-family: "montserrat";
+}
+
+.top {
+  text-align: center;
+  color: #1d1d1d;
+  padding: 100px 0px 150px;
+  font-family: "montserrat";
+  position: relative;
+}
+
+.top p {
+  padding: 10px 20px 0;
+  line-height: 1.8;
+}
+
+.top .topBottom {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  bottom: -151px;
+  left: 0;
+  margin: 0 auto;
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.top .topBottom .triangleLeft {
+  display: inline-block;
+  height: 0;
+  width: 50%;
+  border-right: 150px solid transparent;
+  border-bottom: 80px solid #1d1d1d;
+}
+
+.top .topBottom .triangleRight {
+  display: inline-block;
+  height: 0;
+  width: 50%;
+  border-bottom: 80px solid #1d1d1d;
+  border-left: 150px solid transparent;
+}
+
+.contact {
+  text-align: center;
+  background: #1d1d1d;
+  color: white;
+  padding: 100px 0 50px 0;
+  font-family: "montserrat";
+}
+
+.contact h2 {
+  margin-bottom: 30px;
+}
+
+.contact p {
+  padding: 0 20px;
+  font-family: "montserrat-regular";
+}
+
+.contact form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 90%;
+  margin: 0 auto;
+  padding-top: 50px;
+}
+
+.contact form input {
+  background-color: transparent;
+  border-image-source: linear-gradient(to right top, #916027, #a77c3c, #bd9a53, #d2b86d, #e6d788);
+  border-width: 2pt;
+  border-image-slice: 1;
+  height: 50px;
+  margin-bottom: 50px;
+  font-size: 20px;
+  padding: 10px;
+  color: white;
+  font-family: "montserrat";
+}
+
+.contact form input::-webkit-input-placeholder {
+  font-size: 20px;
+  padding: 10px;
+  color: white;
+  font-family: "montserrat";
+}
+
+.contact form input:-ms-input-placeholder {
+  font-size: 20px;
+  padding: 10px;
+  color: white;
+  font-family: "montserrat";
+}
+
+.contact form input::-ms-input-placeholder {
+  font-size: 20px;
+  padding: 10px;
+  color: white;
+  font-family: "montserrat";
+}
+
+.contact form input::placeholder {
+  font-size: 20px;
+  padding: 10px;
+  color: white;
+  font-family: "montserrat";
+}
+
+.contact form textarea {
+  height: 150px;
+  background-color: transparent;
+  border-image-source: linear-gradient(to right top, #916027, #a77c3c, #bd9a53, #d2b86d, #e6d788);
+  border-width: 2pt;
+  border-image-slice: 1;
+  font-size: 20px;
+  padding: 10px;
+  color: white;
+  font-family: "montserrat";
+}
+
+.contact form textarea::-webkit-input-placeholder {
+  font-size: 20px;
+  padding: 10px;
+  color: white;
+  font-family: "montserrat";
+}
+
+.contact form textarea:-ms-input-placeholder {
+  font-size: 20px;
+  padding: 10px;
+  color: white;
+  font-family: "montserrat";
+}
+
+.contact form textarea::-ms-input-placeholder {
+  font-size: 20px;
+  padding: 10px;
+  color: white;
+  font-family: "montserrat";
+}
+
+.contact form textarea::placeholder {
+  font-size: 20px;
+  padding: 10px;
+  color: white;
+  font-family: "montserrat";
+}
+
+.contact form .submit {
+  width: 150px;
+  height: 60px;
+  font-family: "montserrat";
+  font-size: 20px;
+  background: transparent;
+  border-image-source: linear-gradient(to right top, #916027, #a77c3c, #bd9a53, #d2b86d, #e6d788);
+  border-width: 2pt;
+  border-image-slice: 1;
+  -webkit-box-shadow: -8px -8px 10px -8px #000000;
+          box-shadow: -8px -8px 10px -8px #000000;
+  border-radius: 20px;
+  margin: 20px auto;
+  color: white;
+}
+/*# sourceMappingURL=contact.component.css.map */

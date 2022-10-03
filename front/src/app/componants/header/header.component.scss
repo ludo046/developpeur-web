@@ -1,0 +1,200 @@
+::ng-deep * {
+    margin: 0;
+    padding: 0;
+}
+$primaryColor: rgb(0,161,255);
+$backgroundColor: rgb(119, 119, 119);
+nav{
+    background-color: black;
+    height: 120px;
+    width: 100%;
+    border-bottom: 1px solid $primaryColor;
+    position: fixed;
+    z-index: 3;
+    .header{
+      display: flex;
+      img{
+        height: 100px;
+        width: 100px;
+        display: flex;
+        margin: 10px auto;
+        z-index: 1;
+        animation: rotate3d 1s linear 5s 1;
+        animation-delay: 5s;
+    }
+    .connect{
+      width: 50px;
+    }
+    fa-icon{
+      display: flex;
+      color: #E6D788;
+      background: -webkit-linear-gradient(#916027, #E6D788);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      display: inline-block;
+      font-size: 22px;
+      position: absolute;
+      right: 20px;
+      top: 40px;
+      z-index: 2;
+      
+    }
+    }
+    @media only screen and (min-width : 1224px){
+      height: 220px;
+      clip-path: polygon(0 0, 100% 0%, 100% 73%, 0% 100%);
+      }
+     
+}
+ #menuToggle
+ {
+   display: block;
+   position: relative;
+   top: -75px;
+   left: 20px;
+   z-index: 1;
+   -webkit-user-select: none;
+   user-select: none;
+   width: 250px;
+   margin: 0;
+   @media only screen and (min-width : 1224px){
+      left: 0;
+      width: 100%;
+      top :30px;
+      transform: rotate(-1.8deg);
+    }
+ }
+ #menuToggle li
+ {
+   text-decoration: none;
+   color: #232323;
+   transition: color 0.3s ease;
+   padding: 0;
+   @media only screen and (min-width : 1224px){
+    color: #E6D788;
+    background-image: linear-gradient(
+      to right,
+      #E6D788,
+      #aca166 50%,
+      #9c9159 50%
+    );
+    background-size: 200% 100%;
+    background-position: -100%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all 0.3s ease-in-out;
+   }
+ }
+
+ #menuToggle li:hover
+ {
+  //  color: rgb(88, 126, 161);
+  //  border-bottom: 2px solid red;
+  background-position: 0;
+ }
+ #menuToggle li:hover::before{
+  width: 100%;
+ }
+ #menuToggle input
+ {
+   display: block;
+   width: 40px;
+   height: 32px;
+   position: absolute;
+   top: -7px;
+   left: -5px;
+   cursor: pointer;
+   opacity: 0;
+   z-index: 2;
+   -webkit-touch-callout: none;
+   @media only screen and (min-width : 1224px){
+   display: none;   
+  }
+ }
+ #menuToggle span
+ {
+   display: block;
+   width: 33px;
+   height: 4px;
+   margin-bottom: 5px;
+   position: relative;
+   background: -webkit-linear-gradient(#916027, #E6D788);
+   border-radius: 3px;
+   z-index: 1;
+   transform-origin: 4px 0px;
+   transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+               background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+               opacity 0.55s ease;
+               @media only screen and (min-width : 1224px){
+                display: none;   
+               }
+ }
+ #menuToggle span:first-child
+ {
+   transform-origin: 0% 0%;
+ }
+ #menuToggle span:nth-last-child(2)
+ {
+   transform-origin: 0% 100%;
+ }
+ #menuToggle input:checked ~ span
+ {
+   opacity: 1;
+   transform: rotate(45deg) translate(-2px, -1px);
+   background: #232323;
+ }
+ #menuToggle input:checked ~ span:nth-last-child(3)
+ {
+   opacity: 0;
+   transform: rotate(0deg) scale(0.2, 0.2);
+ }
+ #menuToggle input:checked ~ span:nth-last-child(2)
+ {
+   transform: rotate(-45deg) translate(0, -1px);
+ }
+ #menu
+ {
+   position: absolute;
+   width: 200px;
+   margin: -100px 0 0 -50px;
+   padding: 53px;
+   padding-right: 150px;
+   padding-top: 125px;
+   background: #ededed;
+   list-style-type: none;
+   -webkit-font-smoothing: antialiased;
+   transform-origin: 0% 0%;
+   transform: translate(-100%, 0);
+   transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+   @media only screen and (min-width : 1224px){
+    padding: 0;
+    margin: 0;
+    transform: translate(0,0);
+    background-color: transparent;
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+   }
+ }
+ #menu li
+ {
+   padding: 10px 0;
+   font-size: 22px;
+   font-family: "montserrat";
+   @media only screen and (min-width : 1224px){
+    margin:  0 auto;
+    padding: 0;
+   }
+ }
+ #menuToggle input:checked ~ ul
+ {
+   transform: none;
+ }
+
+ @keyframes rotate3d{
+  0%{
+    transform: rotateX(0deg) rotateY(0) rotateZ(0deg);
+  }100% { 
+    transform: rotateX(0deg) rotateY(360deg) rotateZ(0deg);
+  }
+}

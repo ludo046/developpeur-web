@@ -1,0 +1,210 @@
+::ng-deep * {
+  margin: 0;
+  padding: 0;
+  font-family: "montserrat";
+}
+
+.top {
+  text-align: center;
+  background: linear-gradient(217deg, #335569, rgba(255, 0, 0, 0) 70.71%), linear-gradient(127deg, rgba(55, 85, 119, 0.8), rgba(0, 255, 0, 0) 70.71%), linear-gradient(336deg, rgba(71, 96, 124, 0.8), rgba(0, 0, 255, 0) 70.71%);
+  color: white;
+  padding: 60px 0px 60px;
+  font-family: "montserrat";
+  position: relative;
+}
+
+.top p {
+  padding: 10px 20px 0;
+}
+
+.top .topBottom {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  bottom: -61px;
+  left: 0;
+  margin: 0 auto;
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.top .topBottom .triangleLeft {
+  display: inline-block;
+  height: 0;
+  width: 50%;
+  border-right: 150px solid transparent;
+  border-bottom: 80px solid #1d1d1d;
+}
+
+.top .topBottom .triangleRight {
+  display: inline-block;
+  height: 0;
+  width: 50%;
+  border-bottom: 80px solid #1d1d1d;
+  border-left: 150px solid transparent;
+}
+
+form {
+  background-color: #1d1d1d;
+  padding: 50px 0 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+form p {
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+form .formulaire {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 320px;
+  margin: 0 auto;
+}
+
+form .formulaire input {
+  margin: 0 auto 50px;
+  height: 60px;
+  width: 300px;
+  border: 2px solid white;
+  background-color: transparent;
+  padding-left: 10px;
+  color: white;
+}
+
+form .formulaire input::-webkit-input-placeholder {
+  font-size: 16px;
+  color: white;
+}
+
+form .formulaire input:-ms-input-placeholder {
+  font-size: 16px;
+  color: white;
+}
+
+form .formulaire input::-ms-input-placeholder {
+  font-size: 16px;
+  color: white;
+}
+
+form .formulaire input::placeholder {
+  font-size: 16px;
+  color: white;
+}
+
+form .formulaire .password {
+  margin-bottom: 10px;
+}
+
+form .submit {
+  width: 150px;
+  height: 60px;
+  font-family: "montserrat";
+  font-size: 20px;
+  background-color: #497691;
+  border: none;
+  -webkit-box-shadow: -8px -8px 10px -8px #000000;
+          box-shadow: -8px -8px 10px -8px #000000;
+  border-radius: 20px;
+  margin: 20px auto 0;
+  color: white;
+}
+
+@media only screen and (min-width: 1224px) {
+  form .submit {
+    display: none;
+  }
+}
+
+form .wrapper {
+  position: absolute;
+  bottom: 120px;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+@media only screen and (max-width: 1224px) {
+  form .wrapper {
+    display: none;
+  }
+}
+
+form .link_wrapper {
+  position: relative;
+}
+
+form a {
+  display: block;
+  width: 250px;
+  height: 50px;
+  line-height: 50px;
+  font-weight: bold;
+  text-decoration: none;
+  background: #335569;
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border: 3px solid #335569;
+  -webkit-transition: all .35s;
+  transition: all .35s;
+}
+
+form .icon {
+  width: 50px;
+  height: 50px;
+  border: 3px solid transparent;
+  position: absolute;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  right: 0;
+  top: 0;
+  z-index: -1;
+  -webkit-transition: all .35s;
+  transition: all .35s;
+}
+
+form .icon svg {
+  width: 30px;
+  position: absolute;
+  top: calc(50% - 15px);
+  left: calc(50% - 15px);
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  fill: white;
+  -webkit-transition: all .35s;
+  transition: all .35s;
+}
+
+form a:hover {
+  width: 200px;
+  border: 3px solid white;
+  background: transparent;
+  color: white;
+}
+
+form a:hover + .icon {
+  border: 3px solid white;
+  right: -25%;
+}
+/*# sourceMappingURL=login.component.css.map */

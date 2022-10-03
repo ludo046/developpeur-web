@@ -1,0 +1,120 @@
+::ng-deep * {
+  margin: 0;
+  padding: 0;
+  font-family: "montserrat";
+}
+
+.top {
+  text-align: center;
+  color: #1d1d1d;
+  padding: 100px 0px 150px;
+  font-family: "montserrat";
+  position: relative;
+}
+
+.top .topBottom {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  bottom: -150px;
+  left: 0;
+}
+
+.top .topBottom .triangleLeft {
+  display: inline-block;
+  height: 0;
+  width: 50%;
+  border-right: 150px solid transparent;
+  border-bottom: 80px solid #1d1d1d;
+}
+
+.top .topBottom .triangleRight {
+  display: inline-block;
+  height: 0;
+  width: 50%;
+  border-bottom: 80px solid #1d1d1d;
+  border-left: 150px solid transparent;
+}
+
+.formation {
+  color: white;
+}
+
+.formation h2 {
+  margin-bottom: 20px;
+}
+
+.formation .project {
+  text-align: center;
+  padding: 30px 0px 100px 0px;
+  position: relative;
+  background-color: #1d1d1d;
+}
+
+.formation .project .image {
+  margin: 0 auto 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.formation .project .image img {
+  width: 90%;
+  margin: 0 auto;
+}
+
+@media only screen and (min-width: 1224px) {
+  .formation .project .image img {
+    max-width: 50%;
+  }
+}
+
+.formation .project .projectBottom {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  bottom: -101px;
+  left: 0;
+}
+
+.formation .project .projectBottom .triangleLeftBlue {
+  display: inline-block;
+  height: 0;
+  width: 50%;
+  border-right: 150px solid transparent;
+  border-bottom: 80px solid #494949;
+}
+
+.formation .project .projectBottom .triangleRightBlue {
+  display: inline-block;
+  height: 0;
+  width: 50%;
+  border-bottom: 80px solid #494949;
+  border-left: 150px solid transparent;
+}
+
+.formation .bis {
+  background-color: #494949;
+}
+
+.formation .bis .triangleLeft {
+  display: inline-block;
+  height: 0;
+  width: 50%;
+  border-right: 150px solid transparent;
+  border-bottom: 80px solid #1d1d1d;
+}
+
+.formation .bis .triangleRight {
+  display: inline-block;
+  height: 0;
+  width: 50%;
+  border-bottom: 80px solid #1d1d1d;
+  border-left: 150px solid transparent;
+}
+/*# sourceMappingURL=realisation.component.css.map */

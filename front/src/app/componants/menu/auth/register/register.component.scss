@@ -1,0 +1,160 @@
+::ng-deep * {
+    margin: 0;
+    padding: 0;
+    //color: white;
+    font-family: "montserrat";
+}
+
+$primaryColor: #497691;
+
+.top{
+    text-align: center;
+    background: linear-gradient(217deg, rgb(51, 85, 105), rgba(255, 0, 0, 0) 70.71%),
+                linear-gradient(127deg, rgba(55, 85, 119, 0.8), rgba(0,255,0,0) 70.71%),
+                linear-gradient(336deg, rgba(71, 96, 124, 0.8), rgba(0,0,255,0) 70.71%);
+    color: white;
+    padding: 60px 0px 60px;
+    font-family: "montserrat";
+    position: relative;
+    p{
+        padding: 10px 20px 0;
+    }
+    h1{
+        width: 300px;
+        margin: 0 auto;
+    }
+    .topBottom{
+        position: relative;
+        display: flex;
+        bottom: -61px;
+        left: 0;
+        margin: 0 auto;
+        width: 100%;
+        justify-content: center;
+        .triangleLeft{
+            display : inline-block;
+            height : 0;
+            width : 50%;
+            border-right : 150px solid transparent;
+            border-bottom : 80px solid rgb(29, 29, 29);
+        }
+        .triangleRight{
+            display : inline-block;
+            height : 0;
+            width : 50%;
+            border-bottom : 80px solid rgb(29, 29, 29);
+            border-left : 150px solid transparent;
+        }
+    }
+}
+form{
+    background-color: rgb(29, 29, 29);
+    padding: 50px 0 300px;
+    display: flex;
+    flex-direction: column;
+    p{
+        color: white;
+        display: flex;
+        justify-content: flex-end;
+    }
+    .formulaire{
+        display: flex;
+        flex-direction: column;
+        width: 320px;
+        margin: 0 auto;
+        input{
+            margin: 0 auto 50px;
+            height: 60px;
+            width: 250px;
+            border: 2px solid white;
+            background-color: transparent;
+            padding-left: 10px;
+            color: white;
+            &::placeholder{
+                font-size: 16px;
+                color: white;
+            }
+        }
+        .password{
+            margin-bottom: 10px;
+        }
+    }
+    .submit{
+        width: 150px;
+        height: 60px;
+        font-family: "montserrat";
+        font-size: 20px;
+        background-color: $primaryColor;
+        border: none;
+        box-shadow: -8px -8px 10px -8px #000000;
+        border-radius: 20px;
+        margin: 20px auto 0;
+        color: white;
+        @media only screen and (min-width : 1224px){
+            display: none;
+        }
+    }
+    .wrapper{
+        position: absolute;
+        bottom: -300px;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        @media only screen and (max-width : 1224px){
+            display: none;
+        }
+      }
+      
+      .link_wrapper{
+        position: relative;
+      }
+      
+      a{
+        display: block;
+        width: 250px;
+        height: 50px;
+        line-height: 50px;
+        font-weight: bold;
+        text-decoration: none;
+        background: rgb(51, 85, 105);
+        text-align: center;
+        color: #fff;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        border: 3px solid rgb(51, 85, 105);
+        transition: all .35s;
+      }
+      
+      .icon{
+        width: 50px;
+        height: 50px;
+        border: 3px solid transparent;
+        position: absolute;
+        transform: rotate(45deg);
+        right: 0;
+        top: 0;
+        z-index: -1;
+        transition: all .35s;
+      }
+      
+      .icon svg{
+        width: 30px;
+        position: absolute;
+        top: calc(50% - 15px);
+        left: calc(50% - 15px);
+        transform: rotate(-45deg);
+        fill: white;
+        transition: all .35s;
+      }
+      
+      a:hover{
+        width: 200px;
+        border: 3px solid white;
+        background: transparent;
+        color: white;
+      }
+      
+      a:hover + .icon{
+        border: 3px solid white;
+        right: -25%;
+      }
+}

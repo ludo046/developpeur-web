@@ -1,0 +1,28 @@
+.thanks {
+  height: 100vh;
+  padding: 200px 0;
+  position: relative;
+}
+
+.thanks h1 {
+  font-family: "montserrat";
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+.thanks p {
+  font-family: "montserrat";
+  text-align: center;
+}
+
+.thanks fa-icon {
+  font-size: 20rem;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translate(-50%, -30%) rotate(-3deg);
+          transform: translate(-50%, -30%) rotate(-3deg);
+  z-index: 3;
+  color: black;
+  opacity: 0.1;
+}
+/*# sourceMappingURL=thanks.component.css.map */

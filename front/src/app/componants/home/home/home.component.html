@@ -1,0 +1,108 @@
+
+<div class="global-spinner">
+  <div class="spinner">
+    <img class="circle1" src="../../../../assets/images/dossier sans titre/1.png" alt="">
+    <img class="circle2" src="../../../../assets/images/dossier sans titre/2.png" alt="">
+    <img class="circle3" src="../../../../assets/images/dossier sans titre/3.png" alt="">
+    <img class="circle4" src="../../../../assets/images/dossier sans titre/4.png" alt="">
+    <img class="circle5" src="../../../../assets/images/dossier sans titre/5.png" alt="">
+    <img class="circle6" src="../../../../assets/images/dossier sans titre/6.png" alt="">
+    <img class="base" src="../../../../assets/images/dossier sans titre/base.png" alt="">
+  </div>
+</div>
+
+<main>
+  <app-header></app-header>
+  <section class="top">
+    <div>
+      <h1>Développeur Web<br>Freelance</h1>
+      <p class="bottom">Vous recherchez un <span class="bold">développeur web fullstack</span> pour concevoir votre <span class="bold">site</span> ou <span class="bold">application web</span> ,<br> 
+        Que vous soyez un <span class="bold">particulier</span>, un <span class="bold">professionnel</span>, ou une <span class="bold">association</span>,<br>
+        n'hésitez pas à me contacter, pour me parler de votre projet ou me demander votre <span class="bold">devis gratuit</span>.</p>
+      <p>Je me ferai un plaisir de vous proposer une solution adaptée à vos besoins.</p>
+    </div>
+    <div>
+      <a href="#contact" class="button">Contactez-moi</a>
+      <div class="wrapper">
+          <div class="link_wrapper">
+            <a href="#contact">Contactez-moi</a>
+            <div class="icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 268.832 268.832">
+                <path d="M265.17 125.577l-80-80c-4.88-4.88-12.796-4.88-17.677 0-4.882 4.882-4.882 12.796 0 17.678l58.66 58.66H12.5c-6.903 0-12.5 5.598-12.5 12.5 0 6.903 5.597 12.5 12.5 12.5h213.654l-58.66 58.662c-4.88 4.882-4.88 12.796 0 17.678 2.44 2.44 5.64 3.66 8.84 3.66s6.398-1.22 8.84-3.66l79.997-80c4.883-4.882 4.883-12.796 0-17.678z"/>
+              </svg>
+            </div>
+          </div>
+        </div>
+    </div>
+    <div>
+      <img src="{{mac}}" alt="mac book">
+    </div>
+  </section>
+  <section class="me">
+    <div class="image">
+                <lib-image-as-particles [imageUrl]="selectedUrl" touchAction="none"
+            imageWidth="100%" imageHeight="100%" backgroundColor="#1d1d1d"
+            horizontalAlignment="center" verticalAlignment="center">
+          </lib-image-as-particles>
+    </div>
+  
+            <!-- <img src="{{me}}" alt="photo ludovic moissinac"> -->
+          
+          <!-- <p>Passionné depuis toujours par les technologies du web,<br>
+            j'ai fait le choix d'en faire mon métier en réalisant diverses formations afin de me spécialiser dans le domaine,<br> 
+            c'est alors spontanément que j'ai fait le choix de me lancer en tant qu'independant.
+          </p> -->
+          <p class="bio">Basé en Lozère, après un parcours scolaire, assez chaotique, j'ai choisi de me tourner vers la restauration pour ensuite me tourner vers le commerce, mais ... Il me manquait quelque chose. Passionné depuis toujours par le monde et les technologies du web, j'ai choisie de tout quitter pour me lancer dans de multiples formations afin de me spécialiser dans le domaine et ainsi allier le commerce, et le contact client qui me tient à cœur avec ma passion "le développement web". Je peux enfin avec ce nouveau métier faire ce que j'aime et m'épanouir complétement, et ainsi éponger ma soif d'apprendre continuellement grâce à un milieu en constante évolution. J'ai donc spontanément fait le choix de me lancer dans une carrière freelance qui ne m'enfermera pas dans une routine quotidienne, chaque projets étants différents, je serais à l'écoute pour vous proposez la meilleure solution pour chacun d'entre eux, tout en respectant au mieux votre identité, celle de votre entreprise ou association.</p>
+          <div class="deco"></div>
+  </section>
+  <section class="services">
+          <h2>Mes services</h2>
+          <div>
+              <div class="container">
+                  <fa-icon [icon]="layerGroup"></fa-icon>
+                  <h3>Création de site Web</h3>
+                  <p>Vitrine<br>E-commerce<br>Réseau social d'entreprise<br>...</p>
+              </div>
+              <div class="container">
+                  <fa-icon [icon]="globe"></fa-icon>
+                  <h3>Référencement</h3>
+                  <p>Référencement naturel - SEO<br>Google AdWords</p>
+              </div>
+              <div class="container">
+                  <fa-icon [icon]="syncAlt"></fa-icon>
+                  <h3>Suivi</h3>
+                  <p>Suivi de votre site web<br>Modification<br>...</p>
+              </div>
+          </div>
+          <div class="deco-service"></div>
+  </section>
+  <section class="contact" id="contact">
+      <h2>Me contacter</h2>
+      <p>N'hésitez pas à me contacter via le formulaire de contact ci-dessous (réponse garantie dans la journée)</p>
+      <form action="https://formsubmit.co/ludovicmoissinac.dev@gmail.com" method="POST">
+          <input type="mail" placeholder="Votre email" name="email" required>
+          <input type="hidden" name="_next" value="https://ludovicmoissinacdev.fr/merci">
+          <textarea placeholder="Votre message" type="text" name="name" required></textarea>
+          <button class="submit" type="submit">Envoyer</button>
+          <div class="wrapper">
+              <div class="link_wrapper">
+                <button class="submit2" type="submit">Envoyer</button>
+                <div class="icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 268.832 268.832">
+                    <path d="M265.17 125.577l-80-80c-4.88-4.88-12.796-4.88-17.677 0-4.882 4.882-4.882 12.796 0 17.678l58.66 58.66H12.5c-6.903 0-12.5 5.598-12.5 12.5 0 6.903 5.597 12.5 12.5 12.5h213.654l-58.66 58.662c-4.88 4.882-4.88 12.796 0 17.678 2.44 2.44 5.64 3.66 8.84 3.66s6.398-1.22 8.84-3.66l79.997-80c4.883-4.882 4.883-12.796 0-17.678z"/>
+                  </svg>
+                </div>
+              </div>
+            </div>
+      </form>
+  </section>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+</main>

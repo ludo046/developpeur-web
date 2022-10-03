@@ -1,0 +1,16 @@
+/* You can add global styles to this file, and also import other style files */
+@font-face {
+  font-family: Montserrat;
+  src: url("assets/fonts/Montserrat-Medium.ttf") format("opentype");
+}
+
+@font-face {
+  font-family: Montserrat-regular;
+  src: url("assets/fonts/Montserrat-Regular.ttf") format("opentype");
+}
+
+body {
+  background: -webkit-gradient(linear, left bottom, right top, from(#916027), color-stop(#a77c3c), color-stop(#bd9a53), color-stop(#d2b86d), to(#e6d788));
+  background: linear-gradient(to right top, #916027, #a77c3c, #bd9a53, #d2b86d, #e6d788);
+}
+/*# sourceMappingURL=styles.css.map */
